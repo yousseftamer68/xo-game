@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>لعبة تيك تاك تو</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>لعبة X و O</h1>
+
+  <div class="mode-select">
+    <label><input type="radio" name="mode" value="player" checked> لاعبين</label>
+    <label><input type="radio" name="mode" value="ai"> ضد الكمبيوتر</label>
+  </div>
+
+  <div id="scores">
+    <span>النقاط - X: <strong id="scoreX">0</strong></span> |
+    <span>O: <strong id="scoreO">0</strong></span>
+  </div>
+
+  <div id="gameBoard" class="board"></div>
+
+  <p id="status">الدور على: X</p>
+  <button onclick="resetGame()">إعادة اللعب</button>
+
+  <!-- مؤثرات صوتية -->
+  <audio id="clickSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_3312dbb81f.mp3?filename=mouse-click-153941.mp3"></audio>
+  <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_ba8db1a929.mp3?filename=success-1-6297.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
